@@ -24,19 +24,17 @@ function ContentRowMovies() {
   }
 
 
+  const cardsProp = [movieDb, awards, actors]
+
   return (
     <div className="row">
 
-      {/* <!-- Movies in Data Base --> */}
-      <SmallCard data={movieDb}/>
-
-      {/* <!-- Total Awards --> */}
-      <SmallCard data={awards}/>
-
-      
-      {/* <!-- Actors quantity --> */}
-      <SmallCard data={actors}/>
-    
+    {
+      cardsProp.map((cardProp, i) =>{
+        return <SmallCard key={cardProp + i} {...cardProp}/>
+      } )
+    }
+   
     </div>
   );
 }

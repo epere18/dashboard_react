@@ -10,7 +10,7 @@ function ContentRowTop() {
         <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
       </div>
       <ContentRowMovies />
-      <div class="row">
+      <div className="row">
         <LastMovieInDb />
         <GenresInDb />
       </div>
