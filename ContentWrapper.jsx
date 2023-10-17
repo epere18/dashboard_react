@@ -2,6 +2,7 @@ import React from "react";
 import TopBar from "./TopBar";
 import ContentRowTop from "./ContentRowTop";
 import Footer from "./Footer";
+import Chart from "./Chart";
 
 function ContentWrapper() {
   return (
@@ -9,6 +10,7 @@ function ContentWrapper() {
       <div id="content">
         <TopBar />
         <ContentRowTop />
+        <Chart />
         <Footer />
       </div>
     </div>
